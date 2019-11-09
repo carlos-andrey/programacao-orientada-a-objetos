@@ -9,7 +9,6 @@ for linha in arquivo_amazon:
 	ano, estado, mes, numero, data = linha.split(',')
 	numero = numero.replace(".", "")
 	estado= estado.replace('"','')
-	#print("ano {}, mes {}, numero {}, data {}".format(ano, mes, numero, data))
 	if estado == 'Acre' and ano == '2015':
 		casos_acre = casos_acre + int(numero)
 
