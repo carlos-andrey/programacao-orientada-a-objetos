@@ -7,7 +7,7 @@ sobrenomes = ['Cage', 'Jones', 'Elric', 'De Assis', 'Pan', 'Stark', 'Herondele',
 
 n = int(input('Informe o numero de linhas: '))
 
-with open('Saida.txt','w') as saida:
+with open('saida.txt','w') as saida:
     for linhas in range(0, n):
         idade = random.randint(1, 101)
         nome = random.randint(0, len(nomes)-1)
