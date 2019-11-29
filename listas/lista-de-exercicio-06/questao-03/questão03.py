@@ -4,10 +4,6 @@ def copia_texto(origem, destino):
         with open(destino,'w') as receptasculo:
             index = 0
             for linhas in saida:   
-                if linhas.find('//') == 0 :
-                    print(saida[index], file = receptasculo)
+                if linhas.find('//') != 0 :#procura linhas que não tenham //
+                    print(saida[index].strip('\n'), file = receptasculo)#printa as linhas encontradas
                 index += 1
-x = input('Arquivo de origem(.txt): ')
-y = input('Arquivo de destino(.txt): ') 
-
-copia_texto(x, y)
