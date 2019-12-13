@@ -7,6 +7,3 @@ class Bola:
         self.cor = novaCor
     def mostraCor(self):
         print(f'{self.cor}')
-b1 = Bola('roxo', 4, 'vidro')
-b1.trocaCor('vermelho')
-b1.mostraCor()
