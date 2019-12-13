@@ -8,7 +8,7 @@ def calcula_media(nomes, notas):
                     media = lista_notas[linha].split(' ')
                     soma_final = 0
                     for elemento in range(0, len(media)):
-                        soma = media[elemento].replace('"', ' ')                           
+                        soma = media[elemento].replace('"', ' ')                         
                         soma_final += int(soma)
                     print('{} {:.2f}'.format(nome_aluno[linha].strip('\n'), soma_final / len(soma)), file = notas_medias)
 x = input('Informe nome do arquivo de alunos: ')
