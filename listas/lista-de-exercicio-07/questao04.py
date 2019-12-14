@@ -13,3 +13,4 @@ class Caneta:
         return self.marca
     def imprimir_caracteristicas(self):
         print(f'{self.cor} {self.marca} {self.numero_ponta} {self.volume_tinta}')
+    
